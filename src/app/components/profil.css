@@ -5,7 +5,7 @@
     text-align: center;
     height: 10%;
     min-height: fit-content;
-    background-color: rgb(65, 12, 34);
+    /* background-color: rgb(65, 12, 34); */
 }
 .profil-parent{
     display: flex;
@@ -39,12 +39,12 @@
     margin: 5px 0 0 0;
     font-family: 'Poppins Light';
 }
-.highlighted-btn .highlighted-btn{
+.profil-options .highlighted-btn{
     margin: 0 0 0 28px;
      background-color: rgb(247, 73, 73);
 }
 
-.highlighted-btn .highlighted-btn:hover{
+.profil-options .highlighted-btn:hover{
     margin: 0 0 0 28px;
     background-color: cornsilk;
     color: #111;
@@ -80,4 +80,64 @@
 .cloz .cloz-icons i:hover{
     transform: scale(1.5);
 
+}
+/* responsible */
+
+@media screen and (max-width:1110px){
+    .profil-picture{
+        margin: 0px 0px 0px 80px;
+    }
+    .profil-detail-name{
+        font-size: 20px;
+    }
+    .profil-detail-role .primary-text{
+        font-size: 12px;
+    }
+    .profil-options .btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+
+    }
+    
+}
+@media screen and (max-width:910px) {
+    .profil-picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+    
+}
+@media screen and (max-width:810px) {
+    .profil-picture{
+        margin: 0px !important;
+    }
+    .profil-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+    .profil-options{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profil-options .highlighted-btn{
+        margin: 0 !important;
+    }
+    .profil-options,
+    .profil-detail-role{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    .profil-picture{
+        height: 275px;
+        width: 275px;
+        margin-top: -90px;
+    }
+    .profil-detail{
+        width: 90%;
+    }
 }

@@ -61,7 +61,7 @@ export default function Profil() {
                             </span>
                         </span>
                     </div>
-                    <div className="highlighted-btn">
+                    <div className="profil-options">
                         <button className="btn btn-primary">
                             {""}
                             {"hide Me"}
@@ -85,6 +85,8 @@ export default function Profil() {
 
                 </div>
             </div>
+           
         </div>
+
     );
 }

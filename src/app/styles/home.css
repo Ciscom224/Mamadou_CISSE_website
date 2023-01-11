@@ -1,0 +1,73 @@
+body{
+ overflow: hidden;
+}
+:root{
+    --primary-color:#09172c;
+    --secondary-color: #f5cd2b;
+}
+.home-screen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: start;
+    justify-content: space-between;
+    /* background:red; */
+    overflow: hidden;
+    
+}
+.left-part{
+
+    height: 100vh;
+    /* background-image: url('../../assets/me.png'); */
+    background-repeat: no-repeat;
+    
+}
+.left-part img{
+   
+    height: 100%;
+}
+.left-part::after{
+    content: 'birn';
+    height: inherit;
+}
+.left-part img{
+    z-index: 100;
+}
+.btns{
+    z-index: -100;
+    margin: 1%;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   margin-top: 7%;
+}
+.bt{
+    width: 100%;
+    height: 500px;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.582);
+    font-family: Impact, Haettenschweiler, sans-serif;
+}
+.bt:hover{
+    box-shadow: 0 0px 1px black;
+    transition: all 0.1s ease-in;
+}
+.bt_resume{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10%;
+  background-color: var(--primary-color);
+}
+.bt_resume:hover{
+    color: var(--secondary-color);
+    transition: all 0.1s ease-in;
+}
+.btn-hide{
+    border: 2px solid var(--secondary-color)
+}

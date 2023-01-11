@@ -1,5 +1,6 @@
 body{
  overflow: hidden;
+ height: 100vh;
 }
 :root{
     --primary-color:#09172c;
@@ -23,16 +24,14 @@ body{
     
 }
 .left-part img{
-   
     height: 100%;
+    z-index: 3;
 }
 .left-part::after{
     content: 'birn';
     height: inherit;
 }
-.left-part img{
-    z-index: 100;
-}
+
 .btns{
     z-index: -100;
     margin: 1%;
@@ -70,4 +69,21 @@ body{
 }
 .btn-hide{
     border: 2px solid var(--secondary-color)
+}
+
+
+
+/* les sections */
+.box-content{
+    margin-top: 2%;
+    border: 2px solid red;
+    height: 100vh;
+  overflow-x: hidden; 
+  border-radius: 10px; 
+}
+section{
+    margin-top: 2rem;
+    height: 100vh;
+    background: red;
+    z-index: 1;
 }

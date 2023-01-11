@@ -5,6 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/home.css'
 import { Button } from "bootstrap";
 import NavScrollExample from "./components/navbar";
+import About from "./components/about";
+import Testimorial from "./components/testimorial";
+import Resume from "./components/resume";
+import Contact from "./components/contact";
 export default function Home() {
   return (
     <div className="container-fuild">
@@ -19,6 +23,16 @@ export default function Home() {
         <div className="col-md-8">
           <NavScrollExample/>
           {/* <h1>deifilement des les </h1> */}
+
+          <div className="container box-content">
+            <section id="#">
+              <h1>Home</h1>
+            </section>
+            <About/>
+            <Resume/>
+            <Testimorial/>
+            <Contact/>
+          </div>
         </div>
       </div>
       
